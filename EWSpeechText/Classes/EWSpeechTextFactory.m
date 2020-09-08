@@ -11,6 +11,7 @@
 @implementation EWSpeechTextFactory
 
 + (void)speechChineseText:(NSString *)text rate:(float)rate delegate:(id<AVSpeechSynthesizerDelegate>)delegate {
+    
     EWSpeechTextCore *speechCore = [[EWSpeechTextCore alloc] initWithSpeechDelegate:delegate];
     speechCore.speechText = text;
     speechCore.rate = rate;
