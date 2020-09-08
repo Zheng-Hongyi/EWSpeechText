@@ -59,13 +59,13 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6148C367B086D571496302C8 /* Pods-EWSpeechText_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EWSpeechText_Tests.debug.xcconfig"; path = "Target Support Files/Pods-EWSpeechText_Tests/Pods-EWSpeechText_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6C6EABC07CFD20E30FF18572 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		6C6F69FB7E6E959C3C4343B8 /* EWSpeechText.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = EWSpeechText.podspec; path = ../EWSpeechText.podspec; sourceTree = "<group>"; };
+		6C6EABC07CFD20E30FF18572 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6C6F69FB7E6E959C3C4343B8 /* EWSpeechText.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EWSpeechText.podspec; path = ../EWSpeechText.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78273BD6422A78584F677899 /* Pods-EWSpeechText_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EWSpeechText_Tests.release.xcconfig"; path = "Target Support Files/Pods-EWSpeechText_Tests/Pods-EWSpeechText_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91FE45485FA461259E149CDC /* Pods_EWSpeechText_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EWSpeechText_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAB24EC67954629F25D22B36 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AAB24EC67954629F25D22B36 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E9B81B9E53851B83E5A6EDC2 /* Pods-EWSpeechText_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EWSpeechText_Example.release.xcconfig"; path = "Target Support Files/Pods-EWSpeechText_Example/Pods-EWSpeechText_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				6148C367B086D571496302C8 /* Pods-EWSpeechText_Tests.debug.xcconfig */,
 				78273BD6422A78584F677899 /* Pods-EWSpeechText_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -516,6 +516,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EWSpeechText/EWSpeechText-Prefix.pch";
 				INFOPLIST_FILE = "EWSpeechText/EWSpeechText-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +533,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EWSpeechText/EWSpeechText-Prefix.pch";
 				INFOPLIST_FILE = "EWSpeechText/EWSpeechText-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

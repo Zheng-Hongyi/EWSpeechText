@@ -24,11 +24,11 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/zhenghongyi/EWSpeechText'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'zhenghongyi' => 'zhenghongyi@100tal.com' }
-  s.source           = { :git => 'https://github.com/zhenghongyi/EWSpeechText.git', :tag => s.version.to_s }
+  s.author           = { 'zhenghongyi' => 'hongyiprogram@gmail.com' }
+  s.source           = { :git => 'https://github.com/Zheng-Hongyi/EWSpeechText.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'EWSpeechText/Classes/**/*'
   
@@ -37,6 +37,6 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.frameworks = 'AVFoundation'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

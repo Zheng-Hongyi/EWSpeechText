@@ -7,7 +7,7 @@
 //
 
 #import "EWViewController.h"
-
+#import <EWSpeechTextFactory.h>
 @interface EWViewController ()
 
 @end
@@ -18,6 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [EWSpeechTextFactory speechChineseText:@"你好" rate:0.4 delegate:nil];
 }
 
 - (void)didReceiveMemoryWarning
