@@ -12,8 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface EWSpeechTextFactory : NSObject
 
-+ (void)speechChineseText:(NSString *)text rate:(float)rate delegate:(id <AVSpeechSynthesizerDelegate>) delegate;
-
+// 中文
++ (void)speechChineseText:(NSString *)text rate:(float)rate delegate:(nullable id <AVSpeechSynthesizerDelegate>) delegate;
+// 英文
++ (void)speechEnglishText:(NSString *)text rate:(float)rate delegate:(nullable id <AVSpeechSynthesizerDelegate>) delegate;
 @end
 
 NS_ASSUME_NONNULL_END
