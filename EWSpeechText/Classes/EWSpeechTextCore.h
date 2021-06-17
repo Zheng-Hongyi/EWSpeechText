@@ -15,10 +15,17 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *speechText;
 @property (nonatomic, copy) NSString *language;
 @property (nonatomic) float rate;
+@property (nonatomic, weak) id <AVSpeechSynthesizerDelegate>delegate;
 
 - (instancetype)initWithSpeechDelegate:(id<AVSpeechSynthesizerDelegate>)delegate;
 
 - (void)startSpeech;
+
+- (void)start;
+
+- (void)pause;
+
+- (void)end;
 
 @end
 

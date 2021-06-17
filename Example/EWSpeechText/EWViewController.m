@@ -18,8 +18,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [EWSpeechTextFactory speechChineseText:@"春眠不觉晓" rate:0.4 delegate:nil];
+//    [EWSpeechTextFactory speechChineseText:@"春眠不觉晓" rate:0.4 delegate:nil];
 //    [EWSpeechTextFactory speechEnglishText:@"What's your name?" rate:0.4 delegate:nil];
+//    [EWSpeechTextFactory];
+    [[EWSpeechTextFactory shared] speechChineseText:@"春眠不觉晓" rate:0.4 delegate:nil];
 }
 
 - (void)didReceiveMemoryWarning

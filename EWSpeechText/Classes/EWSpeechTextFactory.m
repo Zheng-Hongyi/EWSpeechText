@@ -8,7 +8,48 @@
 #import "EWSpeechTextFactory.h"
 #import "EWSpeechTextCore.h"
 
+@interface EWSpeechTextFactory ()
+
+@property (nonatomic, strong) EWSpeechTextCore *core;
+
+@end
+
 @implementation EWSpeechTextFactory
+
++ (instancetype)shared {
+    static EWSpeechTextFactory *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (nil == instance) {
+            instance = [EWSpeechTextFactory new];
+        }
+    });
+    return instance;
+}
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.core = [EWSpeechTextCore new];
+    }
+    return self;
+}
+
+- (void)speechChineseText:(NSString *)text rate:(float)rate delegate:(id<AVSpeechSynthesizerDelegate>)delegate {
+    self.core.speechText = text;
+    self.core.language = @"zh-CN";
+    self.core.rate = rate;
+    self.core.delegate = delegate;
+    [self.core start];
+}
+
+- (void)speechEnglishText:(NSString *)text rate:(float)rate delegate:(id<AVSpeechSynthesizerDelegate>)delegate {
+    self.core.speechText = text;
+    self.core.language = @"en-US";
+    self.core.rate = rate;
+    self.core.delegate = delegate;
+    [self.core start];
+}
 
 + (void)speechChineseText:(NSString *)text rate:(float)rate delegate:(id<AVSpeechSynthesizerDelegate>)delegate {
     
