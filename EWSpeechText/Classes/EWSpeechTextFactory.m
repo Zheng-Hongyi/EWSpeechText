@@ -51,6 +51,14 @@
     [self.core start];
 }
 
+- (void)pause {
+    [self.core pause];
+}
+
+- (void)end {
+    [self.core end];
+}
+
 + (void)speechChineseText:(NSString *)text rate:(float)rate delegate:(id<AVSpeechSynthesizerDelegate>)delegate {
     
     EWSpeechTextCore *speechCore = [[EWSpeechTextCore alloc] initWithSpeechDelegate:delegate];

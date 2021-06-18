@@ -23,6 +23,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)speechChineseText:(NSString *)text rate:(float)rate delegate:(nullable id <AVSpeechSynthesizerDelegate>) delegate;
 // 英文
 - (void)speechEnglishText:(NSString *)text rate:(float)rate delegate:(nullable id <AVSpeechSynthesizerDelegate>) delegate;
+
+- (void)pause;
+
+- (void)end;
 @end
 
 NS_ASSUME_NONNULL_END
